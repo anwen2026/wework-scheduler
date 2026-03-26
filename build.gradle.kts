@@ -4,14 +4,6 @@ plugins {
     id("com.google.devtools.ksp") version "1.9.20-1.0.14" apply false
 }
 
-allprojects {
-    repositories {
-        google()
-        mavenCentral()
-        maven { url = uri("https://api.xposed.info/") }
-    }
-}
-
 tasks.register("clean", Delete::class) {
     delete(rootProject.buildDir)
 }
