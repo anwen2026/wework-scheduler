@@ -61,9 +61,10 @@ android {
 }
 
 dependencies {
-    // Xposed API
-    compileOnly("de.robv.android.xposed:api:82")
-    compileOnly("de.robv.android.xposed:api:82:sources")
+    // Xposed API (使用 JitPack 仓库)
+    compileOnly("com.github.rovo89:XposedBridge:art")
+    // 或者使用本地 stub
+    // compileOnly("de.robv.android.xposed:api:82")
 
     // AndroidX Core
     implementation("androidx.core:core-ktx:1.12.0")
