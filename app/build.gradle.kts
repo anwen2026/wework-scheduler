@@ -61,8 +61,8 @@ android {
 }
 
 dependencies {
-    // Xposed API (使用本地 stub 类)
-    // compileOnly(files("libs/xposed-api.jar"))
+    // Xposed API (官方仓库)
+    compileOnly("de.robv.android.xposed:api:82")
 
     // AndroidX Core
     implementation("androidx.core:core-ktx:1.12.0")
