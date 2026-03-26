@@ -18,7 +18,7 @@ import com.wework.scheduler.data.db.entities.*
         AppConfig::class
     ],
     version = 1,
-    exportSchema = true
+    exportSchema = false
 )
 @TypeConverters(Converters::class)
 abstract class AppDatabase : RoomDatabase() {

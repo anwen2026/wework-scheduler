@@ -36,6 +36,9 @@ data class ScheduleTask(
     /** 更新时间 */
     val updatedAt: Long = System.currentTimeMillis(),
     
+    /** 暂停时间 */
+    val pausedAt: Long? = null,
+    
     /** 原始指令消息 ID（用于撤销） */
     val commandMessageId: String? = null
 )
@@ -49,6 +52,12 @@ enum class TaskStatus {
     
     /** 发送中 */
     SENDING,
+    
+    /** 运行中 */
+    RUNNING,
+    
+    /** 已暂停 */
+    PAUSED,
     
     /** 已完成 */
     COMPLETED,

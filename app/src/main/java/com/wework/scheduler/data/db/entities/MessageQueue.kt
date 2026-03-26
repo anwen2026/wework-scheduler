@@ -101,6 +101,9 @@ enum class MessageStatus {
     /** 已发送 */
     SENT,
     
+    /** 已跳过 */
+    SKIPPED,
+    
     /** 已取消 */
     CANCELLED,
     
