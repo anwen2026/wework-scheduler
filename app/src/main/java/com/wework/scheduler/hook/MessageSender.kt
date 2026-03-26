@@ -1,9 +1,6 @@
 package com.wework.scheduler.hook
 
 import android.content.Context
-import com.tencent.wework.foundation.model.Conversation
-import com.tencent.wework.foundation.model.Message
-import com.tencent.wework.msg.api.IMsg
 import de.robv.android.xposed.XC_MethodHook
 import de.robv.android.xposed.XposedBridge
 import de.robv.android.xposed.XposedHelpers
